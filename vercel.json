@@ -1,12 +1,10 @@
 {
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/build",
-  "public": true,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "frontend/build/index.html",
-      "status": 200
+      "source": "/:path*",
+      "destination": "/index.html"
     }
   ]
 }
