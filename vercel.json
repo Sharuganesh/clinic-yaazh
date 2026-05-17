@@ -1,7 +1,7 @@
 {
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/build",
-  "public": "frontend/build",
+  "public": true,
   "routes": [
     {
       "src": "/(.*)",
