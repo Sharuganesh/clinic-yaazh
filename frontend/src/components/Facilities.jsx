@@ -80,6 +80,22 @@ export default function Facilities() {
           ))}
         </motion.div>
 
+        {/* Clinic Building Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.8 }}
+          className="my-16 rounded-3xl overflow-hidden shadow-2xl shadow-[#1B4B5A]/15"
+        >
+          <img
+            src="/clinic-building.jpg"
+            alt="Yaazh Clinic External View"
+            className="w-full h-64 sm:h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+        </motion.div>
+
         {/* Hours highlight */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

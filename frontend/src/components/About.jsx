@@ -134,8 +134,8 @@ export default function About() {
             {/* Main image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#1B4B5A]/15 card-3d">
               <img
-                src="https://images.pexels.com/photos/14558557/pexels-photo-14558557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                alt="Clinic consultation"
+                src="/banner.jpg"
+                alt="Yaazh Clinic - Doctors and Services"
                 className="w-full h-72 sm:h-80 lg:h-96 object-cover"
                 loading="lazy"
               />
