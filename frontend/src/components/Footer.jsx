@@ -153,9 +153,9 @@ export default function Footer() {
                 <Phone size={15} className="mt-0.5 text-[#E87722] flex-shrink-0" />
                 <span className="text-sm">079042 03074</span>
               </a>
-              <a href="mailto:YAAZHSPECIALITYCLINIC@gmail.com" className="flex items-start gap-3 text-white/60 hover:text-white transition-colors">
+              <a href="mailto:yaazhspecialityclinic@gmail.com" className="flex items-start gap-3 text-white/60 hover:text-white transition-colors">
                 <Mail size={15} className="mt-0.5 text-[#E87722] flex-shrink-0" />
-                <span className="text-sm break-all">YAAZHSPECIALITYCLINIC@gmail.com</span>
+                <span className="text-sm break-all">yaazhspecialityclinic@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-white/60">
                 <MapPin size={15} className="mt-0.5 text-[#E87722] flex-shrink-0" />

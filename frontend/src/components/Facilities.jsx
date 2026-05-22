@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Accessibility, Baby, CreditCard, Car, CheckCircle, Clock, MapPin, Wifi } from 'lucide-react';
+import { Accessibility, Baby, CreditCard, Car, CheckCircle, Clock, MapPin, Wifi, Phone } from 'lucide-react';
 
 const facilities = [
   { icon: Accessibility, title: 'Wheelchair Accessible', desc: 'Fully accessible seating and pathways for differently-abled patients.', color: '#1B4B5A' },
@@ -108,12 +108,22 @@ export default function Facilities() {
           <div className="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
             {[
               { label: 'Opening Hours', value: '6 AM – 8 AM | 6 PM – 10 PM', sub: 'Monday to Sunday' },
-              { label: 'Pre-Booking', value: '+91 9894216386', sub: '+91 9566011783' },
+              { label: 'Pre-Booking', value: '+91 9566011783', sub: 'Click to call', isPhone: true },
               { label: 'Phone', value: '+91 7904203074', sub: 'Call for appointments' },
             ].map((item, i) => (
               <div key={i} className="px-8 py-6 text-center">
                 <div className="text-xs font-bold text-[#E87722] uppercase tracking-widest mb-2">{item.label}</div>
-                <div className="text-xl font-black text-white font-outfit">{item.value}</div>
+                {item.isPhone ? (
+                  <a
+                    href="tel:+919566011783"
+                    className="inline-flex items-center justify-center gap-2 text-xl font-black text-white font-outfit hover:text-[#E87722] transition-colors duration-300"
+                  >
+                    <Phone size={24} />
+                    {item.value}
+                  </a>
+                ) : (
+                  <div className="text-xl font-black text-white font-outfit">{item.value}</div>
+                )}
                 <div className="text-sm text-white/60 mt-1">{item.sub}</div>
               </div>
             ))}
