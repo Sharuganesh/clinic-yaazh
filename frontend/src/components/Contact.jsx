@@ -154,8 +154,8 @@ export default function Contact() {
                   className="flex flex-col items-center py-14 text-center"
                   data-testid="contact-success"
                 >
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                    <CheckCircle size={32} className="text-green-500" />
+                  <div className="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mb-4">
+                    <CheckCircle size={32} className="text-[#E87722]" />
                   </div>
                   <h4 className="text-xl font-bold text-[#1B4B5A] font-outfit mb-2">Message Received!</h4>
                   <p className="text-[#475569] text-sm max-w-sm">

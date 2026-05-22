@@ -45,7 +45,7 @@ export default function WhatsAppButton() {
         onMouseLeave={() => setShowTooltip(false)}
         data-testid="whatsapp-float-btn"
         aria-label="Chat on WhatsApp"
-        className="w-14 h-14 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/40 wa-pulse"
+        className="w-14 h-14 rounded-full flex items-center justify-center shadow-2xl shadow-orange-500/40 wa-pulse"
         style={{ background: 'linear-gradient(135deg, #25D366, #20BA5A)' }}
       >
         <svg width="28" height="28" fill="white" viewBox="0 0 24 24" aria-hidden="true">
