@@ -3,24 +3,28 @@ import { Award, CheckCircle, MessageCircle } from 'lucide-react';
 
 const doctors = [
   {
-    name: 'Dr. Karthik',
-    title: 'General Physician & Diabetologist',
+    name: 'Dr. Karthick N',
+    title: 'Consultant Physician',
+    cred: 'MBBS, MD(Internal Medicine), CPCDM',
+    experience: '10+ years',
     image: 'https://images.pexels.com/photos/14558560/pexels-photo-14558560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    specialities: ['General Medicine', 'Diabetology', 'Internal Medicine', 'Fever & Infections'],
-    bio: 'Dr. Karthik is known for his patient and thorough approach to medicine. Patients and their families consistently praise his ability to explain treatments clearly and ensure complete recovery. His expertise in diabetes management and infectious diseases makes him a trusted physician for the Coimbatore community.',
-    highlights: ['Thorough examinations', 'Continuous monitoring', 'Patient-first approach'],
-    color: '#1B4B5A',
-    accent: 'rgba(27,75,90,0.08)',
-  },
-  {
-    name: 'Dr. Shivani',
-    title: 'Pediatrician & Women\'s Health Specialist',
-    image: 'https://images.unsplash.com/photo-1632052998047-1faea5c31145?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxwZWRpYXRyaWNpYW4lMjBiYWJ5fGVufDB8fHx8MTc3ODI1MDEzNnww&ixlib=rb-4.1.0&q=85',
-    specialities: ['Pediatrics', 'Baby Vaccination', "Women's Health", 'Child Wellness'],
-    bio: "Dr. Shivani is highly recommended for pediatric care and baby vaccinations. Parents appreciate her gentle, caring approach with children. She makes vaccinations a hassle-free experience and is known for her ability to diagnose and treat children's conditions with expert precision and a warm demeanor.",
-    highlights: ['Hassle-free vaccinations', 'Gentle with children', 'Expert diagnostics'],
+    specialities: ['Internal Medicine', 'Diabetes', 'Hypertension', 'Fever & Infections', 'Autoimmune Disorders', 'Vitamin Deficiencies'],
+    bio: 'Leading young Consultant physician in internal medicine, currently serving in a medical college as an Assistant Professor. With 10 years of clinical expertise, Dr. Karthick specializes in managing complex chronic conditions with a patient-centered approach. His academic background and clinical experience make him a trusted healthcare provider.',
+    highlights: ['Medical college faculty', 'Complex case management', 'Evidence-based treatment'],
     color: '#E87722',
     accent: 'rgba(232,119,34,0.08)',
+  },
+  {
+    name: 'Dr. Shivani B S',
+    title: 'Consultant Paediatrician',
+    cred: 'MBBS, DNB Paediatrics',
+    experience: '5+ years',
+    image: 'https://images.unsplash.com/photo-1632052998047-1faea5c31145?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxwZWRpYXRyaWNpYW4lMjBiYWJ5fGVufDB8fHx8MTc3ODI1MDEzNnww&ixlib=rb-4.1.0&q=85',
+    specialities: ['Pediatrics', 'Child Vaccinations', 'Newborn Care', 'Growth & Development', 'Child Nutrition', 'Adolescent Health'],
+    bio: 'Consultant Paediatrician expert in child vaccinations and nutrition. With 5 years of specialized pediatric training, Dr. Shivani delivers excellent childcare and comprehensive counselling regarding child rearing practices. Her passion for preventive pediatrics and child development makes her a preferred choice for families.',
+    highlights: ['Vaccination expert', 'Nutrition counselor', 'Child development specialist'],
+    color: '#1B4B5A',
+    accent: 'rgba(27,75,90,0.08)',
   },
 ];
 
@@ -90,10 +94,19 @@ export default function Doctors() {
 
               {/* Content */}
               <div className="p-6 sm:p-8">
+                {/* Credentials */}
+                <div className="mb-4 pb-4 border-b border-[#E87722]/20">
+                  <div className="text-xs font-bold text-[#E87722] uppercase tracking-wide mb-1">Credentials</div>
+                  <div className="text-sm font-semibold text-[#1B4B5A]">{doc.cred}</div>
+                  <div className="text-xs text-[#475569] mt-1">{doc.experience}</div>
+                </div>
+                
                 {/* Bio */}
-                <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6">
-                  {doc.bio}
-                </p>
+                <div className="mb-4 p-3 rounded-lg" style={{ background: doc.accent }}>
+                  <p className="text-sm text-[#475569] leading-relaxed font-medium">
+                    {doc.bio}
+                  </p>
+                </div>
 
                 {/* Specialities */}
                 <div className="mb-6">

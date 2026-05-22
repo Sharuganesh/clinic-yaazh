@@ -8,10 +8,10 @@ const CROSS = "https://static.prod-images.emergentagent.com/jobs/8085276d-30f9-4
 const PILL = "https://static.prod-images.emergentagent.com/jobs/8085276d-30f9-4674-8efa-761575ebd0f4/images/225e8a7e4d922848cfd2d7a40efc19852f5726b6d4ac59d33d5b513686304a89.png";
 
 const stats = [
+  { value: '2000', label: 'Patients Treated', icon: '♥' },
   { value: '5.0', label: 'Google Rating', icon: '★' },
-  { value: '19+', label: 'Happy Patients', icon: '♥' },
-  { value: '2+', label: 'Years of Service', icon: '◆' },
-  { value: '24/7', label: 'Patient Care', icon: '●' },
+  { value: '1', label: 'Years of Service', icon: '◆' },
+  { value: '13', label: 'Specialities', icon: '✓' },
 ];
 
 export default function Hero() {

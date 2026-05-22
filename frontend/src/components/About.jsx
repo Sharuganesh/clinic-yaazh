@@ -9,10 +9,10 @@ const values = [
 ];
 
 const stats = [
+  { label: 'Patients Treated', value: 2000, display: '2000+', suffix: '' },
   { label: 'Google Rating', value: 5.0, display: '5.0 ★', suffix: '' },
-  { label: 'Patient Reviews', value: 19, display: '19+', suffix: '' },
-  { label: 'Years of Service', value: 2, display: '2+', suffix: '' },
-  { label: 'Specialities', value: 4, display: '4+', suffix: '' },
+  { label: 'Years of Service', value: 1, display: '1+', suffix: '' },
+  { label: 'Specialities', value: 13, display: '13+', suffix: '' },
 ];
 
 function AnimatedNumber({ value, display, label }) {
