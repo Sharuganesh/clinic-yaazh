@@ -7,7 +7,7 @@ const facilities = [
   { icon: CreditCard, title: 'Digital Payments', desc: 'Google Pay, NFC & contactless payments accepted for convenience.', color: '#1B4B5A' },
   { icon: Car, title: 'On-Site Parking', desc: 'Convenient and spacious on-site parking available for all patients.', color: '#E87722' },
   { icon: CheckCircle, title: 'On-Site Services', desc: 'All medical consultations and treatments available at the clinic.', color: '#1B4B5A' },
-  { icon: Clock, title: 'Extended Hours', desc: 'Open till 10 PM to serve patients at their convenience.', color: '#E87722' },
+  { icon: Clock, title: 'Extended Hours', desc: 'Morning 6 AM – 8 AM | Evening 6 PM – 10 PM daily.', color: '#E87722' },
   { icon: MapPin, title: 'Central Location', desc: 'Conveniently located near Raja Ganapathy Temple, VNS Nagar.', color: '#1B4B5A' },
   { icon: Wifi, title: 'Modern Equipment', desc: 'State-of-the-art diagnostic tools for accurate health assessments.', color: '#E87722' },
 ];
@@ -91,9 +91,9 @@ export default function Facilities() {
         >
           <div className="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
             {[
-              { label: 'Opening Hours', value: 'Mon – Sun', sub: 'Open till 10:00 PM' },
-              { label: 'Location', value: 'VNS Nagar', sub: 'Ganapathy, Coimbatore 641006' },
-              { label: 'Phone', value: '079042 03074', sub: 'Call for appointments' },
+              { label: 'Opening Hours', value: '6 AM – 8 AM | 6 PM – 10 PM', sub: 'Monday to Sunday' },
+              { label: 'Pre-Booking', value: '+91 9894216386', sub: '+91 9566011783' },
+              { label: 'Phone', value: '+91 7904203074', sub: 'Call for appointments' },
             ].map((item, i) => (
               <div key={i} className="px-8 py-6 text-center">
                 <div className="text-xs font-bold text-[#E87722] uppercase tracking-widest mb-2">{item.label}</div>

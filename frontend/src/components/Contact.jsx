@@ -2,21 +2,21 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
-const supportEmail = 'YAAZHSPECIALITYCLINIC@gmail.com';
+const supportEmail = 'yaazhspecialityclinic@gmail.com';
 
 const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '079042 03074',
-    href: 'tel:07904203074',
+    value: '+91 7904203074',
+    href: 'tel:+917904203074',
     color: '#1B4B5A',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'YAAZHSPECIALITYCLINIC@gmail.com',
-    href: 'mailto:YAAZHSPECIALITYCLINIC@gmail.com',
+    value: 'yaazhspecialityclinic@gmail.com',
+    href: 'mailto:yaazhspecialityclinic@gmail.com',
     color: '#E87722',
   },
   {

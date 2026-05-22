@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Instagram, Facebook, Heart } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Heart, Youtube } from 'lucide-react';
 
 const LOGO = "https://customer-assets.emergentagent.com/job_yaazh-immersive-care/artifacts/lwezmiaz_Screenshot%202026-05-08%20194843.png";
 
@@ -77,12 +77,32 @@ export default function Footer() {
                 <MapPin size={16} />
               </a>
               <a
-                href="mailto:YAAZHSPECIALITYCLINIC@gmail.com"
+                href="mailto:yaazhspecialityclinic@gmail.com"
                 data-testid="footer-email"
                 className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white hover:bg-[#E87722] transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >
                 <Mail size={16} />
+              </a>
+              <a
+                href="https://www.instagram.com/yaazhspecialityclinic/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="footer-instagram"
+                className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white hover:bg-pink-500 transition-all duration-300 hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram size={16} />
+              </a>
+              <a
+                href="http://youtube.com/channel/UCA7k4ixZZnlWw_7Bu6cxm1g"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="footer-youtube"
+                className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-white hover:bg-red-600 transition-all duration-300 hover:scale-110"
+                aria-label="YouTube"
+              >
+                <Youtube size={16} />
               </a>
             </div>
           </div>

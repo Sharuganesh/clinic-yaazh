@@ -12,7 +12,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
-    <div className="App overflow-x-hidden">
+    <div className="App overflow-x-hidden overflow-y-auto">
       <Navbar />
       <main>
         <Hero />

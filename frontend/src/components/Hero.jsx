@@ -52,7 +52,7 @@ export default function Hero() {
   }, [mouseX, mouseY]);
 
   return (
-    <section ref={heroRef} id="home" className="relative min-h-screen overflow-hidden">
+    <section ref={heroRef} id="home" className="relative min-h-screen overflow-hidden w-full">
       {/* Background Image (parallax) */}
       <motion.div className="absolute inset-0 z-0 scale-110" style={{ y: bgY }}>
         <img
