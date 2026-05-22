@@ -1,0 +1,39 @@
+{
+  "short_name": "Yaazh Clinic",
+  "name": "Yaazh Speciality Clinic",
+  "description": "Best speciality clinic in Coimbatore, Ganapathy. Expert doctors for diabetes care, pediatrics, general medicine, baby vaccination & women's health.",
+  "icons": [
+    {
+      "src": "/clinic-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/clinic-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "https://www.yaazhspecialityclinic.com/",
+  "scope": "https://www.yaazhspecialityclinic.com/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1B4B5A",
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/clinic-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
