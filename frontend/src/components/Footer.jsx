@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Instagram, Facebook, Heart, Youtube } from 'lucide-react';
 
-const LOGO = "https://customer-assets.emergentagent.com/job_yaazh-immersive-care/artifacts/lwezmiaz_Screenshot%202026-05-08%20194843.png";
+const LOGO = "/clinic-logo.png";
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
