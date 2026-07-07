@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Instagram, Facebook, Heart, Youtube } from 'lucide-react';
 
-const LOGO = "/clinic-logo.png";
+const LOGO = "/logo.svg";
 
 const quickLinks = [
   { label: 'Home', href: '#home' },

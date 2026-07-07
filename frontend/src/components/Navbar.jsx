@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 
-const LOGO = "/clinic-logo.png";
+const LOGO = "/logo.svg";
 
 const navLinks = [
   { label: 'Home', href: '#home' },
